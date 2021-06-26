@@ -1,63 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react"
+import ReactDOM from "react-dom"
 
-// ===============
-// ReactDOM.render(
-//     <h1>Hello World!</h1>,
-//     document.getElementById("root")
-// )
+function App() {
+    const firstName = "Jorge"
+    const lastName = "Salhani"
 
-// ===============
-// function MyApp() {
-//     return ( 
-//     <ul>
-//         <li>1</li>
-//         <li>2</li>
-//         <li>3</li>
-//     </ul>
-//     )
-// }
+    const date = new Date()
 
-// ReactDOM.render(
-//     <MyApp />,
-//     document.getElementById("root")
-// )
+    return (
+        <div>
+            <h1>Hello {`${firstName}` + " " + `${lastName}`}!</h1>
+            <h2>It is currently about {date.getHours()} o'clock</h2>
+        </div>
+    )
+}
 
-// ===============
-// function MyInfo() {
-//     return (
-//         <div>
-//             <h1>Jorge Salhani</h1>
-//             <p>Hello, me!</p>
-//             <ol>
-//                 <li>Vac 1</li>
-//                 <li>Vac 2</li>
-//                 <li>Vac 3</li>
-//             </ol>
-//         </div>
-//     )
-// }
-
-// ReactDOM.render(
-//     <MyInfo />,
-//     document.getElementById("root")
-// )
-
-// ================
-// import MyInfo from "./components/MyInfo.js"
-
-// ReactDOM.render(
-//     <MyInfo />,
-//     document.getElementById("root")
-// )
-
-// ================
-// import App from "./App.js"
-
-// ReactDOM.render(
-//     <App />,
-//     document.getElementById("root")
-// )
-
-// ================
-
+ReactDOM.render(
+     <App />,
+    document.getElementById("root")
+)
